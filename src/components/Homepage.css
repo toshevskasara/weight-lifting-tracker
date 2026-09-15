@@ -1,0 +1,16 @@
+:root {
+  --navy: #031D44;
+  --lobster: #E5625E;
+  --ivory: #F2F5EA;
+  --green: #4CB944;
+  --gray: #D6DBD2;
+}
+
+.recent{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.track{
+  margin-top: 50px;
+}

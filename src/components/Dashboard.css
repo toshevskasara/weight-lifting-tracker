@@ -1,0 +1,88 @@
+:root {
+  --navy: #031D44;
+  --lobster: #E5625E;
+  --ivory: #F2F5EA;
+  --green: #4CB944;
+  --gray: #D6DBD2;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.dashboard-shell {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard-shell .row {
+  height: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 210px;
+  background-color: var(--navy);
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.sidebar .nav-link {
+  color: var(--ivory);
+  opacity: 0.85;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.sidebar .nav-link:hover {
+  opacity: 1;
+  color: var(--lobster);
+}
+
+.username-item {
+  margin-top: 360px;
+  padding: 0 20px;
+}
+
+.username-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.username-text {
+  display: inline-block;
+  white-space: nowrap;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.btn-logout {
+  margin: 20px 20px 0;
+  background-color: var(--lobster);
+  border-color: var(--lobster);
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+.btn-logout:hover {
+  background-color: var(--ivory);
+  color: var(--navy);
+}
+
+.main-content {
+  margin-left: 210px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 767.98px) {
+  .main-content {
+    margin-left: 0;
+  }
+}

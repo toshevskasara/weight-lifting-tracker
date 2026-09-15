@@ -1,0 +1,7 @@
+- najdi kako da se generira avatar so prvite bukvo od imeti i prezimeto
+- Workout.css napravi
+- YourExercises.css napravi
+- kako se dodavaat grafici
+- dodaj edit i delete na exercises
+
+Supabase pass: 4KM1pnUHX03XhLnR

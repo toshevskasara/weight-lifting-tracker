@@ -1,0 +1,133 @@
+:root {
+  --navy: #031D44;
+  --lobster: #E5625E;
+  --ivory: #F2F5EA;
+  --green: #4CB944;
+  --gray: #D6DBD2;
+}
+
+h1 {
+  color: var(--navy);
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 24px;
+}
+
+.add-workout-wrap {
+  width: 100%;
+}
+
+.add-workout-wrap .btn-primary {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.add-workout-wrap .btn-primary:hover {
+  background-color: var(--lobster);
+  border-color: var(--lobster);
+}
+
+.category-bar {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  padding: 6px;
+  gap: 6px;
+}
+
+.category-bar .nav-link {
+  color: var(--navy);
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+.category-bar .nav-link.active {
+  background-color: var(--navy) !important;
+  color: #ffffff;
+}
+
+.category-bar .nav-link:hover:not(.active) {
+  color: var(--lobster);
+}
+
+h3 {
+  color: var(--navy);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.table th {
+  color: var(--navy);
+  font-weight: 600;
+  border-bottom: 2px solid var(--navy);
+}
+
+.table td {
+  color: var(--navy);
+  vertical-align: middle;
+  border-color: var(--gray);
+}
+
+.table tbody tr:hover {
+  background-color: var(--ivory);
+}
+
+.btn-edit {
+  color: var(--lobster);
+  font-weight: 600;
+}
+
+.btn-edit:hover {
+  color: var(--navy);
+}
+
+.modal-content {
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--gray);
+}
+
+.modal-title {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.form-label {
+  color: var(--navy);
+  font-weight: 600;
+} 
+
+.form-control:focus {
+  border-color: var(--lobster);
+  box-shadow: 0 0 0 0.2rem rgba(229, 98, 94, 0.2);
+}
+
+.modal-footer .btn-primary {
+  background-color: var(--navy);
+  border-color: var(--navy);
+}
+
+.modal-footer .btn-secondary {
+  background-color: var(--gray);
+  border-color: var(--gray);
+  color: var(--navy);
+}
+
+.modal-footer .btn-outline-danger {
+  color: var(--lobster);
+  border-color: var(--lobster);
+}
+
+.modal-footer .btn-outline-danger:hover {
+  background-color: var(--lobster);
+  color: #ffffff;
+}

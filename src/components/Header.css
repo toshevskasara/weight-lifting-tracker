@@ -1,0 +1,45 @@
+:root {
+  --navy: #031D44;
+  --lobster: #E5625E;
+  --ivory: #F2F5EA;
+  --green: #4CB944;
+  --gray: #D6DBD2;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+header .navbar {
+  height: 50px;
+  background-color: var(--navy) !important;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+header .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ivory) !important;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+header .navbar-brand img {
+  border-radius: 4px;
+}
+
+header hr {
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: var(--lobster);
+  opacity: 1;
+}

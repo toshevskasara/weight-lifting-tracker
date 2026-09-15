@@ -1,0 +1,99 @@
+:root {
+  --navy: #031D44;
+  --lobster: #E5625E;
+  --ivory: #F2F5EA;
+  --green: #4CB944;
+  --gray: #D6DBD2;
+}
+
+.workout-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.workout-page form {
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.workout-page h1 {
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.workout-page .form-select,
+.workout-page .form-control {
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--navy);
+  margin-bottom: 18px;
+}
+
+.workout-page .form-select:focus,
+.workout-page .form-control:focus {
+  border-color: var(--lobster);
+  box-shadow: 0 0 0 0.2rem rgba(229, 98, 94, 0.15);
+}
+
+.workout-page .form-select:disabled {
+  background-color: var(--ivory);
+  color: var(--gray);
+}
+
+.workout-page .form-label {
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.workout-page input[type="submit"] {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.15s ease;
+}
+
+.workout-page input[type="submit"]:hover {
+  background-color: var(--lobster);
+  border-color: var(--lobster);
+}
+
+.success-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--green);
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(3, 29, 68, 0.2);
+  animation: toast-in 0.2s ease-out;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
