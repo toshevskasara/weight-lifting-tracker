@@ -34,7 +34,7 @@ function Signup() {
                 alert(error.message);
             }
             else{
-                alert("Sign Up Successful! Please check your email for confirmation.");
+                alert("Sign Up Successful! Please go to Login page.");
             }
         }
         else{
