@@ -81,8 +81,77 @@ html, body {
   overflow-y: auto;
 }
 
+/* Mobile styles */
+
+.mobile-topbar {
+  display: none;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  background-color: var(--navy);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+}
+
+.hamburger-btn {
+  width: 32px;
+  height: 26px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1060;
+}
+
+.hamburger-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--ivory);
+  border-radius: 2px;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1030;
+}
+
 @media (max-width: 767.98px) {
+  .mobile-topbar {
+    display: flex;
+  }
+
   .main-content {
     margin-left: 0;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+  }
+
+  .sidebar {
+    top: 0;
+    left: -260px;
+    width: 240px;
+    z-index: 1040;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar.sidebar-open {
+    left: 0;
+  }
+
+  .sidebar .pt-3 {
+    padding-top: 60px !important;
   }
 }

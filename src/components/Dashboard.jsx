@@ -6,6 +6,7 @@ import '../components/Dashboard.css'
 
 function Dashboard() {
   const [userEmail, setUserEmail] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
   const usernameTextRef = useRef(null);
   const usernameWrapRef = useRef(null);
 
@@ -40,8 +41,25 @@ function Dashboard() {
 
   }, [userEmail]);
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <div className="dashboard-shell">
+      {/*Mobile versoin hambuerger*/}
+      <div className="mobile-topbar d-md-none">
+        <button className="hamburger-btn"
+                aria-label="Toggle menu"
+                onClick={() => setMenuOpen(prev => !prev)}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+        </button>
+      </div>
+
+      {menuOpen && (
+        <div className="sidebar-backdrop d-md-none" onClick={closeMenu}></div>
+      )}
+
       <div className="row g-0">
         {/* Sidebar */}
         <nav className="col-md-2 d-none d-md-block sidebar border-end">
