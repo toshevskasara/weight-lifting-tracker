@@ -2,7 +2,7 @@
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis, ResponsiveContainer } from 'recharts';
 
 const MyAreaChart = ({ data, title, isAnimationActive = true }) => (
-  <div style={{ marginBottom: '2rem', width: '400px', height: '300px' }}>
+  <div style={{ marginBottom: '2rem', width: '100%', maxWidth: '400px', height: '300px' }}>
     {title && <h5>{title}</h5>}
     <ResponsiveContainer width="100%" height={300}>
       <AreaChart data={data} margin={{ top: 10, right: 0, left: 0, bottom: 0 }}>

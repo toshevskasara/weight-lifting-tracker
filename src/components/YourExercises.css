@@ -131,3 +131,12 @@ h3 {
   background-color: var(--lobster);
   color: #ffffff;
 }
+
+@media (max-width: 767.98px) {
+  .col-md-6 > div {
+    height: 220px !important;
+  }
+  .col-md-6 .recharts-responsive-container {
+    height: 220px !important;
+  }
+}
