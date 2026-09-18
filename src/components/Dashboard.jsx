@@ -62,7 +62,8 @@ function Dashboard() {
 
       <div className="row g-0">
         {/* Sidebar */}
-        <nav className="col-md-2 d-none d-md-block sidebar border-end">          <div className="pt-3">
+        <nav className={`col-md-2 sidebar border-end ${menuOpen ? 'sidebar-open' : ''}`}>          
+          <div className="pt-3">
             <ul className="nav flex-column">
               <li className="nav-item">
                 <a className="nav-link" href="/#/">Homepage</a>
